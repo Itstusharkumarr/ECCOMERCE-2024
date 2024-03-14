@@ -35,7 +35,7 @@ server.use("/app/v1/",categoryRoutes)
 server.use("/app/v1/",productRoutes)
 
 server.use("*",(req,res)=>{
-res.sendFile(path.join(__dirname,"./frontend/build/index.html"));
+res.sendFile(path.join(__dirname,"./var/task/frontend/build/index.html"));
 });
 
 server.listen(PORT,()=>{console.log(`server is running at port no. http://localhost:${PORT}`.bgRed.white)})
